@@ -21,11 +21,15 @@ import {
   MatFormFieldModule } from "@angular/material";
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule,
+  imports: [BrowserModule,FormsModule,
+  HttpClientModule,
+  AppRoutingModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule,
   DragDropModule,
   ScrollingModule,
   MatInputModule,
